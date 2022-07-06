@@ -1,0 +1,17 @@
+Vantagens do MongoDB vs Oracle:
+
+-Escalabilidade
+	À medida que vão sendo inseridos novos dados, as bases de dados relacionais (nomeadamente bases de dados Oracle) tornam-se mais pesadas, dificultando o rápido acesso às informações nelas contidas, o que atrasa toda a aplicação. Quando são utilizadas bases de dados não relacionais (MongoDB no caso), tal problema é facilmente contornado, devido à elevada capacidade de escalabilidade destas, que permite um acesso mais veloz aos dados necessários.
+
+-Maior facilidade de adição de novas relações
+	Em MongoDB torna-se mais fácil adicionar novas relações. Enquanto que em bases de dados relacionais, ao ser necessário inserir novas relações somos obrigados a alterar o modelo lógico, o que, por vezes, poderá implicar também alterações nos dados já inseridos, em MongoDB tais alterações não são necessárias, uma vez que a arquitetura deste tipo de bases de dados permite que os documentos inseridos possuam diferentes estruturas, ou seja, diferentes relações, sem alterar o funcionamento geral da base de dados bem como a veracidade dos restantes dados.
+
+-Facilidade de escrita do codigo
+	Por fim, uma vantagem para o programador associada a este tipo de bases de dados comparativamente a outras advem do facto de que o código necessário para criar queries é em certa medida mais simples e percetível.
+
+Desvantagens do MongoDB vs Oracle:
+
+-Repetição de Informação
+	Por forma a tornar mais fácil o acesso à informação contida na base de dados, limitando o número de referências existentes, é prática comum no uso de bases de dados Mongo repetir informação, inserindo-a em vários sítios diferentes, por forma a associa-la a outros conteúdos sem ser necessários referenciá-la. Apesar de ser vantajoso ao nível de acesso à informação, a base de dados torna-se mais pesada, no sentido em que acaba por possuir muita informação repetida que obriga a uma necessidade de mais espaço em memória.
+
+Tendo tudo isto em vista, podemos afirmar que, para este projeto em concreto, torna-se mais útil recorrer a uma base de dados Mongo, por todas as vantagens que esta apresenta, nomeadamente a maior facilidade de inserção de relações, que poderá ser útil caso necessitemos de adicionar novas informações obtidas pelos sensores, bem como a escalabilidade que esta fornece, que poderá ser necessária, à medida que aumenta a quantidade de dados inserida na base de dados.
